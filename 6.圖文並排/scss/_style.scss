@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap");
+
+$primary: #37523d;
+$light: #eaf0ed;
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Noto Sans TC", sans-serif;
+}
+
+a {
+	display: block;
+	text-decoration: none;
+}
+
+.container {
+	width: 908px;
+	margin: 0 auto;
+	border: 17px solid $primary;
+	background-color: $primary;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	background-color: $light;
+	align-items: center;
+	border-radius: 10px 10px 0 0;
+	.logo {
+		padding-left: 30px;
+	}
+	a {
+		padding: 10px;
+		color: $primary;
+		font-weight: 900;
+		margin-right: 20px;
+		&:hover {
+			color: blue;
+		}
+	}
+}
+
+.main {
+	display: flex;
+	padding: 30px 50px;
+	background-color: #fff;
+	.image{
+		margin-right: 50px;
+	}
+	.content {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		h3 {
+			font-size: 22px;
+			padding-bottom: 23px;
+			color: $primary;
+			font-weight: 900;
+			margin-top: 20px;
+		}
+		p {
+			line-height: 23px;
+			font-size: 16px;
+		}
+	}
+	.social {
+		display: flex;
+		a {
+			color: $primary;
+			font-size: 20px;
+			margin-left: 10px;
+			border-bottom: 2px solid $primary;
+			padding-top: 5px;
+			&:hover {
+				background-color: #cceeff;
+			}
+		}
+	}
+}
