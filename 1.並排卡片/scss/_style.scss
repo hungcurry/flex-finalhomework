@@ -30,16 +30,16 @@ p {
 	.card {
 		width: 375px;
 		box-shadow: 0 0 3px #9a9494;
-		.title {
-			text-align: center;
-			padding: 95px 0 91px;
-			background-color: #eaf0ed;
-			color: $primary;
-		}
+	}
+	.title {
+		text-align: center;
+		padding: 95px 0 91px;
+		background-color: #eaf0ed;
+		color: $primary;
 	}
 	.content {
 		background-color: #fff;
-		padding: 40px 33px 90px;
+		padding: 30px 34px 80px;
 		.subtitle {
 			margin-bottom: 35px;
 			color: $primary;
