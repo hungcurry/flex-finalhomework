@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
+
+$primary: #37523d;
+$light: #eaf0ed;
+
+* {
+	box-sizing: border-box;
+}
+
+h3 {
+	font-size: 18px;
+	line-height: 2.2;
+	font-weight: 900;
+}
+
+p {
+	font-size: 14px;
+	line-height: 1.4;
+}
+
+h3,
+p {
+	color: $primary;
+}
+
+.container {
+	width: 1286px;
+	margin: 0 auto;
+	font-family: "Noto Sans TC", sans-serif;
+}
+
+.small {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 44px;
+	&-item {
+		display: flex;
+		align-items: flex-start;
+		padding: 15px 30px 30px;
+		background-color: $light;
+	}
+	img {
+		width: 56px;
+		height: 56px;
+		margin-right: 12px;
+	}
+	.content {
+		.title {
+			margin-top: 6px;
+		}
+	}
+}
+
+.medium {
+	display: flex;
+	text-align: center;
+	justify-content: space-around;
+	margin-bottom: 45px;
+	&-item {
+		background-color: $light;
+		padding: 18px 43px 28px;
+		.title {
+			margin-top: 5px;
+		}
+	}
+}
+
+.large {
+	padding: 15px 30px;
+	background-color: $light;
+	&-item {
+		display: flex;
+		align-items: center;
+		img {
+			padding-top: 18px;
+		}
+		&:first-child {
+			img {
+				margin-right: 15px;
+			}
+		}
+		&:last-child {
+			flex-direction: row-reverse;
+			img {
+				margin-left: 15px;
+			}
+		}
+	}
+}
