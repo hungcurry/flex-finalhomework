@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500&display=swap");
+
+$primary: #37523d;
+$light: #eaf0ed;
+$fz-medium: 24px;
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Noto Sans TC", sans-serif;
+}
+
+.container {
+	width: 950px;
+	margin: 0 auto;
+}
+
+.main {
+	display: flex;
+	.category {
+		width: 300px;
+		text-align: center;
+		color: $primary;
+		margin-right: 20px;
+		.category {
+			&-title {
+				border: 1px solid #dddddd;
+				padding: 16px 0;
+				background-color: $primary;
+				font-size: $fz-medium;
+				color: $light;
+			}
+			&-item {
+				border: 1px solid #dddddd;
+				a {
+					display: block;
+					padding: 16px 0;
+					text-decoration: none;
+					color: $primary;
+					font-size: $fz-medium;
+					border: 2px solid transparent;
+					&:hover {
+						border: 2px solid $primary;
+					}
+				}
+			}
+		}
+		.active {
+			background-color: $light;
+		}
+	}
+	.product {
+		display: flex;
+		margin-bottom: 30px;
+		width: 620px;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		.card {
+			margin-bottom: 20px;
+			width: 300px;
+			box-shadow: 2px 2px 5px rgba(100, 100, 100, 0.16);
+			&-img-top {
+				position: relative;
+			}
+			&-body {
+				display: flex;
+				align-items: center;
+				justify-content: space-evenly;
+				color: $primary;
+				font-size: $fz-medium - 4;
+				border-right: 1px solid $light;
+				border-left: 1px solid $light;
+			}
+			&-footer {
+				text-align: center;
+				a {
+					display: block;
+					text-decoration: none;
+					padding: 16px 0;
+					background-color: $light;
+					color: $primary;
+					font-size: $fz-medium;
+					&:hover {
+						background-color: $primary;
+						color: $light;
+					}
+				}
+			}
+			.procuct-title {
+				font-weight: 300;
+				line-height: 56px;
+				border-right: 1px solid $light;
+				padding: 0 33px;
+			}
+		}
+	}
+}

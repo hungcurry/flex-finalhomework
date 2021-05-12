@@ -1,0 +1,161 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;500&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.container {
+  width: 950px;
+  margin: 0 auto;
+}
+
+.main {
+  display: flex;
+}
+
+.main .category {
+  width: 300px;
+  text-align: center;
+  color: #37523d;
+  margin-right: 20px;
+}
+
+.main .category .category-title {
+  border: 1px solid #dddddd;
+  padding: 16px 0;
+  background-color: #37523d;
+  font-size: 24px;
+  color: #eaf0ed;
+}
+
+.main .category .category-item {
+  border: 1px solid #dddddd;
+}
+
+.main .category .category-item a {
+  display: block;
+  padding: 16px 0;
+  text-decoration: none;
+  color: #37523d;
+  font-size: 24px;
+  border: 2px solid transparent;
+}
+
+.main .category .category-item a:hover {
+  border: 2px solid #37523d;
+}
+
+.main .category .active {
+  background-color: #eaf0ed;
+}
+
+.main .product {
+  display: flex;
+  margin-bottom: 30px;
+  width: 620px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.main .product .card {
+  margin-bottom: 20px;
+  width: 300px;
+  box-shadow: 2px 2px 5px rgba(100, 100, 100, 0.16);
+}
+
+.main .product .card-img-top {
+  position: relative;
+}
+
+.main .product .card-body {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #37523d;
+  font-size: 20px;
+  border-right: 1px solid #eaf0ed;
+  border-left: 1px solid #eaf0ed;
+}
+
+.main .product .card-footer {
+  text-align: center;
+}
+
+.main .product .card-footer a {
+  display: block;
+  text-decoration: none;
+  padding: 16px 0;
+  background-color: #eaf0ed;
+  color: #37523d;
+  font-size: 24px;
+}
+
+.main .product .card-footer a:hover {
+  background-color: #37523d;
+  color: #eaf0ed;
+}
+
+.main .product .card .procuct-title {
+  font-weight: 300;
+  line-height: 56px;
+  border-right: 1px solid #eaf0ed;
+  padding: 0 33px;
+}
+/*# sourceMappingURL=all.css.map */
